@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary--background: hsl(47, 88%, 63%);
+    --neutral--white: hsl(0, 0%, 100%);
+    --neutral--grey: hsl(0, 0%, 50%);
+    --neutral--black: hsl(0, 0%, 7%);
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    background-color: var(--primary--background);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    background-color: var(--neutral--white);
+    border-radius: 20px;
+    border: 2px solid var(--neutral--black);
+    width: 400px;
+    box-shadow: 12px 8px 8px var(--neutral--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.img {
+    margin-block: 20px;
+}
+
+.img>img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.para {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-inline: 30px;
+    gap: 10px;
+}
+
+.para h3 {
+    font-weight: bolder;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: var(--primary--background);
+    color: var(--neutral--black);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3e8e41;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    gap: 5px;
+    margin-inline: 30px;
+    margin-block: 20px;
+}
+
+.user>.pic>img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.user p {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+@media (max-width: 465px) {
+    p{
+        font-size: 16px;
+    }
+    .para h3{
+        font-size: 20px;
+    }
+    .container {
+        padding: 50px;
+    }
+
+    .img {
+        margin-block: 15px;
+        margin-inline: 20px;
+    }
+    .btn {
+        font-size: 12px;
+    }
+    .user p {
+        font-size: 12px;
+        font-weight: bolder;
+    }
+
+}
